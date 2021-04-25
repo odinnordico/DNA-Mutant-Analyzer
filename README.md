@@ -2,11 +2,14 @@
 
 Service for mutant/human detection based on their DNA sequence represented in a matrix type
 
+Find the application running at: [DNA-Mutant-Analyzer](https://dhk-dna-analyzer.herokuapp.com/)
+
 ## Requisites
 
 ### Build management
 
 `Gradle 6`
+`Jacoco` is used to keep the coverage above 80%, excluding configuration and model.
 
 ### Database
 
