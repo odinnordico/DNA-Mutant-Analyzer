@@ -2,7 +2,7 @@
 
 Service for mutant/human detection based on their DNA sequence represented in a matrix type
 
-Find the application running at: [DNA-Mutant-Analyzer](https://dhk-dna-analyzer.herokuapp.com/)
+Find the application running at: [DNA-Mutant-Analyzer](https://dhk-dna-analyzer.herokuapp.com/) and the [REST Docc](https://dhk-dna-analyzer.herokuapp.com/swagger-ui/index.html)
 
 ## Requisites
 
