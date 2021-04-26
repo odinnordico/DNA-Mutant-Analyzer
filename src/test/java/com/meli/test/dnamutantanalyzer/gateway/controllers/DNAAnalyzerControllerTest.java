@@ -1,18 +1,15 @@
-package com.meli.test.dnamutantanalyzer.controllers;
+package com.meli.test.dnamutantanalyzer.gateway.controllers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
 import com.meli.test.dnamutantanalyzer.gateway.persistence.entity.StatsEntity;
 import com.meli.test.dnamutantanalyzer.gateway.persistence.repository.StatRepository;
-import com.meli.test.dnamutantanalyzer.model.CharMatrix;
 import com.meli.test.dnamutantanalyzer.model.DNARequest;
 import com.meli.test.dnamutantanalyzer.model.Stat;
 import com.meli.test.dnamutantanalyzer.services.DNAAnalyzerService;
@@ -59,7 +56,7 @@ class DNAAnalyzerControllerTest {
 
   @Test
   void testGetStats() {
-    when(statRepository.findAll()).thenReturn((Iterable<StatsEntity>) Arrays
+    when(statRepository.findAll()).thenReturn(Arrays
         .asList(
             StatsEntity.builder().isMutant(true).build(),
             StatsEntity.builder().isMutant(false).build()));

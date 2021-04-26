@@ -20,7 +20,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     return new Docket(DocumentationType.SWAGGER_2)
         .useDefaultResponseMessages(false)
         .select()
-        .apis(RequestHandlerSelectors.basePackage("com.meli.test.dnamutantanalyzer.controllers"))
+        .apis(RequestHandlerSelectors.basePackage("com.meli.test.dnamutantanalyzer.gateway.controllers"))
         .paths(regex("/.*"))
         .build()
         .apiInfo(metaData());
